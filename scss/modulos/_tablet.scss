@@ -60,10 +60,10 @@
           margin-bottom: 40px;
         }
         img#vector {
-          width: 120px;
-          height: 120px;
+          width: 150px;
+          height: 150px;
           position: absolute;
-          left: 13%;
+          left: -15%;
           bottom: 50%;
         }
       }
@@ -73,8 +73,16 @@
   #body-nos {
     main {
       div {
+        img#perro {
+          width: 400px;
+          height: 500px;
+        }
         img#paw {
-          left: 5%;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          left: 10%;
+          bottom: 25%;
         }
       }
     }

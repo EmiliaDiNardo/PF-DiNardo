@@ -97,16 +97,10 @@
       div {
         img#local {
           width: 300px;
-          height: 500px;
-          border-radius: 35px;
-          margin-bottom: 40px;
+          height: 400px;
         }
         img#vector {
-          width: 85px;
-          height: 85px;
-          position: absolute;
-          left: 10%;
-          bottom: 50%;
+          display: none;
         }
       }
     }
