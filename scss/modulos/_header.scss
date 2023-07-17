@@ -1,0 +1,24 @@
+header {
+  grid-area: header;
+  background-color: $color-header;
+  height: 15vh;
+}
+.navbar-nav {
+  font-size: $font-md;
+  font-family: $fuente-parrafos;
+  margin-left: 20px;
+}
+.nav-link {
+  color: $color-txt-header-footer;
+  &:hover {
+    color: $color-footer;
+  }
+}
+.navbar {
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img-fluid {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,416 @@
+// MAIN INDEX
+#body-indx {
+  main {
+    grid-area: main;
+    background-color: $color-main;
+    display: flex;
+    flex-direction: column;
+    #section-1 {
+      div.contenedor {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 100%;
+          max-width: 1440px;
+          height: 600px;
+        }
+        div.uno {
+          color: $color-txt;
+          font-family: $fuente-titulos;
+          font-size: $font-xxxl;
+          position: absolute;
+          top: 30%;
+          left: 30%;
+        }
+        div.dos {
+          color: $color-footer;
+          font-family: $fuente-titulos;
+          font-size: $font-xxxl;
+          position: absolute;
+          top: 45%;
+          left: 30%;
+        }
+      }
+    }
+    #section-2 {
+      @extend %flexbox-column-center;
+      align-items: center;
+      div#txt {
+        margin-top: 30px;
+        width: 500px;
+        h1 {
+          @include titulo-h1;
+          margin-bottom: 30px;
+        }
+        p {
+          @extend %parrafo;
+        }
+      }
+      div#hrs {
+        background-color: rgba(255, 255, 255, 0.25);
+        align-self: center;
+        padding: 35px;
+        border-radius: 7px;
+        margin-bottom: 150px;
+        margin-top: 80px;
+        &:hover {
+          background-color: white;
+        }
+        h2 {
+          @include titulo-h2;
+        }
+        p {
+          @extend %parrafo;
+        }
+      }
+    }
+  }
+}
+// MAIN PLAN DETOX
+#body-pd {
+  main {
+    grid-area: main;
+    background-color: $color-main;
+    display: grid;
+    grid-template-rows: 0.8fr 0.3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pd"
+      "pd-img";
+    #section-pd {
+      grid-area: pd;
+      @extend %flexbox-column-center;
+      div#pd-div1 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        h1 {
+          @include titulo-h1;
+        }
+        h2 {
+          @include titulo-h2;
+        }
+      }
+      div#pd-div2 {
+        @extend %flexbox-row-center;
+        margin-bottom: 50px;
+        p {
+          @extend %parrafo;
+          width: 600px;
+          margin-top: 20px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    section#pd-img {
+      grid-area: pd-img;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      div {
+        .imgpdx {
+          width: 144px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+// MAIN UBICACION
+#body-ub {
+  main {
+    grid-area: main;
+    background-color: $color-main;
+    @extend %flexbox-column-center;
+    div {
+      margin: 0px auto 0px auto;
+      h1 {
+        @include titulo-h1;
+      }
+      h2 {
+        @include titulo-h2;
+      }
+      a {
+        i {
+          font-size: $font-xxxl;
+          color: $color-boton;
+          margin-top: 20px;
+          &:hover {
+            color: $color-footer;
+          }
+        }
+      }
+    }
+    hr {
+      @include hr-style;
+      margin-bottom: 30px;
+    }
+    div {
+      position: relative;
+      margin-bottom: 50px;
+      img#local {
+        width: 400px;
+        height: 600px;
+        border-radius: 35px;
+        margin-bottom: 40px;
+      }
+      img#vector {
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        left: 30%;
+        bottom: 35%;
+      }
+    }
+  }
+}
+// MAIN NOSOTROS
+#body-nos main {
+  grid-area: main;
+  background-color: $color-main;
+  @extend %flexbox-column-center;
+  h1 {
+    @include titulo-h1;
+  }
+  hr {
+    @include hr-style;
+  }
+  p {
+    @extend %parrafo;
+    width: 520px;
+    margin: 25px auto 25px auto;
+    strong {
+      font-size: $font-lg;
+    }
+  }
+  h2 {
+    @include titulo-h2;
+  }
+  h3 {
+    @include titulo-h3;
+  }
+  hr {
+    @include hr-style;
+  }
+  div {
+    position: relative;
+    img#perro {
+      width: 500px;
+      height: 600px;
+      border-radius: 35px;
+      margin-bottom: 20px;
+    }
+    img#paw {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 22%;
+      bottom: 25%;
+    }
+  }
+}
+// MAIN CONTACTO
+#body-ct {
+  main {
+    grid-area: main;
+    background-color: $color-main;
+    @extend %flexbox-column-center;
+    justify-content: space-between;
+    h1 {
+      @include titulo-h1;
+    }
+    form {
+      div {
+        label {
+          font-family: $fuente-parrafos;
+          color: $color-txt;
+          margin: 10px 0px 10px 0px;
+        }
+        .imp-cont {
+          border: none;
+          border-radius: 3px;
+          padding: 6px;
+        }
+      }
+      div {
+        button#boton-ct {
+          display: inline-block;
+          border: 1px solid $color-boton;
+          font-size: $font-md;
+          font-family: $fuente-parrafos;
+          color: $color-txt;
+          background-color: white;
+          border-radius: 7px;
+          padding: 7px;
+          width: 100px;
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: 50px;
+          &:hover {
+            background-color: $color-boton;
+          }
+        }
+      }
+    }
+  }
+}
+// MAIN MENU
+#body-mn {
+  main {
+    grid-area: main;
+    background-color: $color-main;
+    @include grid-menu;
+    section#sec1 {
+      grid-area: s1;
+      @extend %flexbox-column-items;
+      margin-top: 20px;
+      h1 {
+        @include titulo-h1;
+        margin-top: 50px;
+      }
+      div {
+        a.bot {
+          display: inline-block;
+          width: 200px;
+          line-height: 50px;
+          text-decoration: none;
+          background-color: $color-boton;
+          text-align: center;
+          border-radius: 7px;
+          font-family: $fuente-parrafos;
+          font-size: $font-md;
+          color: $color-txt;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          border: 1px solid $color-boton;
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+      hr {
+        @include hr-style-menu;
+        margin-top: 50px;
+      }
+    }
+    section#sec2 {
+      grid-area: s2;
+      @extend %flexbox-column-items;
+      h2 {
+        @include titulo-h2;
+      }
+      h3 {
+        @include titulo-h3;
+      }
+    }
+    section#sec3 {
+      grid-area: s3;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 0.4fr 1fr 0.02fr 1fr 0.02fr 1fr 0.4fr;
+      grid-template-areas: ". d1 . d2 . d3 .";
+      section#dc1 {
+        grid-area: d1;
+        @extend %flexbox-row-center;
+        text-align: center;
+        div {
+          h4 {
+            @include titulo-h4;
+          }
+          p {
+            @extend %parrafo;
+          }
+        }
+      }
+      section#dc2 {
+        grid-area: d2;
+        @extend %flexbox-row-center;
+        align-self: center;
+        text-align: center;
+        div {
+          h4 {
+            @include titulo-h4;
+          }
+          p {
+            @extend %parrafo;
+          }
+        }
+      }
+      section#dc3 {
+        grid-area: d3;
+        @extend %flexbox-row-center;
+        text-align: center;
+        div {
+          h4 {
+            @include titulo-h4;
+          }
+          p {
+            @extend %parrafo;
+          }
+        }
+      }
+    }
+    section#sec4 {
+      grid-area: s4;
+      @extend %flexbox-column-center;
+      hr {
+        @include hr-style-menu;
+        margin-top: 50px;
+      }
+      h2 {
+        @include titulo-h2;
+      }
+      div {
+        column-count: 2;
+        h4 {
+          @include titulo-h4;
+        }
+        p {
+          @extend %parrafo;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    section#sec5 {
+      grid-area: s5;
+      @extend %flexbox-column-center;
+      hr {
+        @include hr-style-menu;
+        margin-top: 50px;
+      }
+      h2 {
+        @include titulo-h2;
+      }
+      div {
+        column-count: 2;
+        p {
+          font-family: $fuente-titulos;
+          font-size: $font-lg;
+          color: $color-txt;
+        }
+      }
+    }
+    section#sec6 {
+      grid-area: s6;
+      @extend %flexbox-column-center;
+      hr {
+        @include hr-style-menu;
+        margin-top: 50px;
+      }
+      h2 {
+        @include titulo-h2;
+      }
+      div {
+        column-count: 2;
+        margin-bottom: 40px;
+        h4 {
+          @include titulo-h4;
+        }
+        p {
+          @extend %parrafo;
+        }
+      }
+    }
+  }
+}

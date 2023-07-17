@@ -1,0 +1,228 @@
+@media screen and (max-width: 425px) {
+  // index @media mobile ------------------
+  #body-indx {
+    header {
+      nav.navbar {
+        div#navbar-toggler {
+          background-color: rgba(28, 41, 46, 0.33);
+          margin-left: -40px;
+          .img-fluid {
+            margin: 35px 0px 10px 40px;
+            width: 70px;
+          }
+          a.nav-link {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    main {
+      #section-1 {
+        display: none;
+      }
+      #section-2 {
+        div#txt {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 300px;
+        }
+        h1 {
+          font-size: $font-xxl;
+          margin-top: 15px;
+          margin-bottom: 15px;
+
+          p {
+            font-size: $font-md;
+            width: 100%;
+            max-width: 300px;
+            height: 100px;
+            margin: auto;
+            white-space: wrap;
+            overflow: hidden;
+          }
+        }
+        div#hrs {
+          h2 {
+            font-size: $font-xxl;
+          }
+        }
+      }
+    }
+  }
+  // plan detox @media mobile------------------
+  #body-pd {
+    header {
+      nav.navbar {
+        div#navbar-toggler {
+          background-color: rgba(28, 41, 46, 0.33);
+          margin-left: -40px;
+          .img-fluid {
+            margin: 35px 0px 10px 40px;
+            width: 70px;
+          }
+          a.nav-link {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  // UBICACION @media mobile------------------
+  #body-ub {
+    header {
+      nav.navbar {
+        div#navbar-toggler {
+          background-color: rgba(28, 41, 46, 0.33);
+          margin-left: -40px;
+          .img-fluid {
+            margin: 35px 0px 10px 40px;
+            width: 70px;
+          }
+          a.nav-link {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    main {
+      div {
+        h1 {
+          font-size: $font-xxl;
+        }
+        h2 {
+          font-size: $font-xl;
+        }
+      }
+      div {
+        img#local {
+          width: 300px;
+          height: 500px;
+          border-radius: 35px;
+          margin-bottom: 40px;
+        }
+        img#vector {
+          width: 85px;
+          height: 85px;
+          position: absolute;
+          left: 10%;
+          bottom: 50%;
+        }
+      }
+    }
+  }
+  // pagina nosotros @media mobile------------------
+  #body-nos {
+    header {
+      nav.navbar {
+        div#navbar-toggler {
+          background-color: rgba(28, 41, 46, 0.33);
+          margin-left: -40px;
+          .img-fluid {
+            margin: 35px 0px 10px 40px;
+            width: 70px;
+          }
+          a.nav-link {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    main {
+      h1 {
+        font-size: $font-xxl;
+      }
+      p {
+        width: 300px;
+        font-size: $font-md;
+      }
+      h2 {
+        font-size: $font-xl;
+      }
+      div {
+        img#perro {
+          width: 300px;
+          height: 450px;
+        }
+        img#paw {
+          display: none;
+        }
+      }
+    }
+  }
+  // pagina contacto @media mobile------------------
+  #body-ct {
+    header {
+      nav.navbar {
+        div#navbar-toggler {
+          background-color: rgba(28, 41, 46, 0.33);
+          margin-left: -40px;
+          .img-fluid {
+            margin: 35px 0px 10px 40px;
+            width: 70px;
+          }
+          a.nav-link {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    main {
+      input {
+        width: 90%;
+      }
+      textarea {
+        width: 90%;
+      }
+    }
+  }
+  #body-mn {
+    header {
+      nav.navbar {
+        div#navbar-toggler {
+          background-color: rgba(28, 41, 46, 0.33);
+          margin-left: -40px;
+          .img-fluid {
+            margin: 35px 0px 10px 40px;
+            width: 70px;
+          }
+          a.nav-link {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    main {
+      section#sec1 {
+        div {
+          a.bot {
+            display: block;
+            width: 150px;
+            line-height: 35px;
+            margin-top: 3px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+      section#sec3 {
+        display: block;
+      }
+      section#sec4 {
+        div {
+          column-count: 1;
+        }
+      }
+      section#sec5 {
+        div {
+          column-count: 1;
+        }
+      }
+      section#sec6 {
+        div {
+          column-count: 1;
+        }
+      }
+    }
+  }
+}

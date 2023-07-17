@@ -1,0 +1,73 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin body-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+@mixin hr-style {
+  width: 50%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 5px solid;
+}
+
+@mixin hr-style-menu {
+  width: 30%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 5px solid rgb(38, 71, 83);
+  margin-top: 20px;
+}
+
+@mixin grid-menu {
+  display: grid;
+  grid-template-rows: 0.2fr 0.1fr 0.5fr 0.7fr 0.7fr 0.7fr;
+  grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-areas:
+    ". s1 s1 ."
+    ". s2 s2 ."
+    ". s3 s3 ."
+    ". s4 s4 ."
+    ". s5 s5 ."
+    ". s6 s6 .";
+}
+@mixin titulo-h1 {
+  font-family: $fuente-titulos;
+  color: $color-txt;
+  font-size: $font-xxxl;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@mixin titulo-h2 {
+  color: $color-txt;
+  font-family: $fuente-titulos;
+  font-size: $font-xxl;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@mixin titulo-h3 {
+  color: $color-txt;
+  font-size: $font-xl;
+  font-family: $fuente-titulos;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@mixin titulo-h4 {
+  color: $color-txt;
+  font-size: $font-lg;
+  font-family: $fuente-titulos;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

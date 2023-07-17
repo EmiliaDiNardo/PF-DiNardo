@@ -1,0 +1,19 @@
+* {
+  @include reset;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#body-indx,
+#body-pd,
+#body-ub,
+#body-nos,
+#body-ct,
+#body-mn {
+  @include body-grid;
+}
