@@ -44,7 +44,7 @@
   // UBICACION @media tablet ------------------
   #body-ub {
     main {
-      div {
+      div#ubicacion {
         h1 {
           font-size: $font-xxl;
         }
@@ -52,7 +52,7 @@
           font-size: $font-xl;
         }
       }
-      div {
+      div#imagen-local {
         img#local {
           width: 400px;
           height: 600px;
@@ -63,7 +63,7 @@
           width: 150px;
           height: 150px;
           position: absolute;
-          left: -15%;
+          left: 13%;
           bottom: 50%;
         }
       }

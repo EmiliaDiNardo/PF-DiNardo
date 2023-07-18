@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center; }
 
-#body-indx main #section-2, #body-pd main #section-pd, #body-ub main, #body-nos main, #body-ct main, #body-mn main section#sec4, #body-mn main section#sec5, #body-mn main section#sec6 {
+#body-indx main #section-2, #body-pd main #section-pd, #body-nos main, #body-ct main, #body-mn main section#sec4, #body-mn main section#sec5, #body-mn main section#sec6 {
   display: flex;
   flex-direction: column;
   text-align: center; }
@@ -163,25 +163,28 @@ header {
 #body-ub main {
   grid-area: main;
   background-color: #d5ebdf; }
-  #body-ub main div {
-    margin: 0px auto 0px auto; }
-    #body-ub main div h1 {
+  #body-ub main div#ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    #body-ub main div#ubicacion h1 {
       font-family: "Londrina Solid", cursive;
       color: #264753;
       font-size: 3rem;
       margin-top: 40px;
       margin-bottom: 40px; }
-    #body-ub main div h2 {
+    #body-ub main div#ubicacion h2 {
       color: #264753;
       font-family: "Londrina Solid", cursive;
       font-size: 2rem;
       margin-top: 25px;
       margin-bottom: 25px; }
-    #body-ub main div a i {
+    #body-ub main div#ubicacion a i {
       font-size: 3rem;
       color: #e7c56b;
       margin-top: 20px; }
-      #body-ub main div a i:hover {
+      #body-ub main div#ubicacion a i:hover {
         color: #2b9e8e; }
   #body-ub main hr {
     width: 50%;
@@ -189,16 +192,19 @@ header {
     margin-left: auto;
     margin-right: auto;
     border-top: 5px solid;
+    margin-top: 20px;
     margin-bottom: 30px; }
-  #body-ub main div {
-    position: relative;
-    margin-bottom: 50px; }
-    #body-ub main div img#local {
+  #body-ub main div#imagen-local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    #body-ub main div#imagen-local img#local {
       width: 400px;
       height: 600px;
       border-radius: 35px;
       margin-bottom: 40px; }
-    #body-ub main div img#vector {
+    #body-ub main div#imagen-local img#vector {
       width: 170px;
       height: 170px;
       position: absolute;
@@ -504,20 +510,20 @@ header {
     margin-top: 30px; }
     #body-indx main #section-2 div#hrs h2 {
       font-size: 2.5rem; }
-  #body-ub main div h1 {
+  #body-ub main div#ubicacion h1 {
     font-size: 2rem; }
-  #body-ub main div h2 {
+  #body-ub main div#ubicacion h2 {
     font-size: 1.5rem; }
-  #body-ub main div img#local {
+  #body-ub main div#imagen-local img#local {
     width: 400px;
     height: 600px;
     border-radius: 35px;
     margin-bottom: 40px; }
-  #body-ub main div img#vector {
+  #body-ub main div#imagen-local img#vector {
     width: 150px;
     height: 150px;
     position: absolute;
-    left: -15%;
+    left: 13%;
     bottom: 50%; }
   #body-nos main div img#perro {
     width: 400px;
@@ -616,14 +622,14 @@ header {
       width: 70px; }
     #body-ub header nav.navbar div#navbar-toggler a.nav-link {
       margin-left: 20px; }
-  #body-ub main div h1 {
+  #body-ub main div#ubicacion h1 {
     font-size: 2rem; }
-  #body-ub main div h2 {
+  #body-ub main div#ubicacion h2 {
     font-size: 1.5rem; }
-  #body-ub main div img#local {
+  #body-ub main div#imagen-local img#local {
     width: 300px;
     height: 400px; }
-  #body-ub main div img#vector {
+  #body-ub main div#imagen-local img#vector {
     display: none; }
   #body-nos header nav.navbar div#navbar-toggler {
     background-color: rgba(28, 41, 46, 0.33);

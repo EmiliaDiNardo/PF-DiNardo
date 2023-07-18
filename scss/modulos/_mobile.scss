@@ -86,7 +86,7 @@
       }
     }
     main {
-      div {
+      div#ubicacion {
         h1 {
           font-size: $font-xxl;
         }
@@ -94,7 +94,7 @@
           font-size: $font-xl;
         }
       }
-      div {
+      div#imagen-local {
         img#local {
           width: 300px;
           height: 400px;

@@ -121,9 +121,11 @@
   main {
     grid-area: main;
     background-color: $color-main;
-    @extend %flexbox-column-center;
-    div {
-      margin: 0px auto 0px auto;
+    div#ubicacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       h1 {
         @include titulo-h1;
       }
@@ -143,11 +145,15 @@
     }
     hr {
       @include hr-style;
+      margin-top: 20px;
       margin-bottom: 30px;
     }
-    div {
+    div#imagen-local {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: relative;
-      margin-bottom: 50px;
+
       img#local {
         width: 400px;
         height: 600px;
