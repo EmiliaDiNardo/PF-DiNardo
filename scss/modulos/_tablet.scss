@@ -81,7 +81,7 @@
           width: 200px;
           height: 200px;
           position: absolute;
-          left: 10%;
+          left: -25%;
           bottom: 25%;
         }
       }
@@ -123,13 +123,16 @@
         }
       }
       section#pd-img {
-        div {
+        div.imagenes-uno {
           display: flex;
           justify-content: center;
           .imgpdx {
             width: 70px;
             height: 100px;
           }
+        }
+        div.imagenes-dos {
+          display: none;
         }
       }
     }

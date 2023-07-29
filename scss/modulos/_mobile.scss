@@ -4,7 +4,7 @@
     header {
       nav.navbar {
         div#navbar-toggler {
-          background-color: rgba(28, 41, 46, 0.33);
+          background-color: $color-header;
           margin-left: -40px;
           .img-fluid {
             margin: 35px 0px 10px 40px;
@@ -55,7 +55,7 @@
     header {
       nav.navbar {
         div#navbar-toggler {
-          background-color: rgba(28, 41, 46, 0.33);
+          background-color: $color-header;
           margin-left: -40px;
           .img-fluid {
             margin: 35px 0px 10px 40px;
@@ -67,13 +67,24 @@
         }
       }
     }
+    main {
+      section#pd-img {
+        div.imagenes-dos {
+          display: initial;
+          .imgpdx {
+            width: 70px;
+            height: 100px;
+          }
+        }
+      }
+    }
   }
   // UBICACION @media mobile------------------
   #body-ub {
     header {
       nav.navbar {
         div#navbar-toggler {
-          background-color: rgba(28, 41, 46, 0.33);
+          background-color: $color-header;
           margin-left: -40px;
           .img-fluid {
             margin: 35px 0px 10px 40px;
@@ -110,7 +121,7 @@
     header {
       nav.navbar {
         div#navbar-toggler {
-          background-color: rgba(28, 41, 46, 0.33);
+          background-color: $color-header;
           margin-left: -40px;
           .img-fluid {
             margin: 35px 0px 10px 40px;
@@ -127,8 +138,8 @@
         font-size: $font-xxl;
       }
       p {
+        font-size: $font-s;
         width: 300px;
-        font-size: $font-md;
       }
       h2 {
         font-size: $font-xl;
@@ -136,7 +147,7 @@
       div {
         img#perro {
           width: 300px;
-          height: 450px;
+          height: 375px;
         }
         img#paw {
           display: none;
@@ -149,7 +160,7 @@
     header {
       nav.navbar {
         div#navbar-toggler {
-          background-color: rgba(28, 41, 46, 0.33);
+          background-color: $color-header;
           margin-left: -40px;
           .img-fluid {
             margin: 35px 0px 10px 40px;
@@ -170,11 +181,12 @@
       }
     }
   }
+  // pagina menu @media mobile------------------
   #body-mn {
     header {
       nav.navbar {
         div#navbar-toggler {
-          background-color: rgba(28, 41, 46, 0.33);
+          background-color: $color-header;
           margin-left: -40px;
           .img-fluid {
             margin: 35px 0px 10px 40px;

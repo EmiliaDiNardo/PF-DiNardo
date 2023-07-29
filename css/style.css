@@ -77,19 +77,18 @@ header {
     justify-content: center; }
     #body-indx main #section-1 div.contenedor img {
       width: 100%;
-      max-width: 1440px;
-      height: 600px; }
+      height: 30%; }
     #body-indx main #section-1 div.contenedor div.uno {
       color: #264753;
       font-family: "Londrina Solid", cursive;
-      font-size: 3rem;
+      font-size: 3.2rem;
       position: absolute;
       top: 30%;
       left: 30%; }
     #body-indx main #section-1 div.contenedor div.dos {
       color: #2b9e8e;
       font-family: "Londrina Solid", cursive;
-      font-size: 3rem;
+      font-size: 3.2rem;
       position: absolute;
       top: 45%;
       left: 30%; }
@@ -198,17 +197,11 @@ header {
     justify-content: center;
     align-items: center;
     position: relative; }
-    #body-ub main div#imagen-local img#local {
-      width: 400px;
-      height: 600px;
+    #body-ub main div#imagen-local img.local {
+      width: 300px;
+      height: 500px;
       border-radius: 35px;
       margin-bottom: 40px; }
-    #body-ub main div#imagen-local img#vector {
-      width: 170px;
-      height: 170px;
-      position: absolute;
-      left: -20%;
-      bottom: 35%; }
 
 #body-nos main {
   grid-area: main;
@@ -226,8 +219,8 @@ header {
     margin-right: auto;
     border-top: 5px solid; }
   #body-nos main p {
-    width: 520px;
-    margin: 25px auto 25px auto; }
+    margin: 25px auto 25px auto;
+    width: 500px; }
     #body-nos main p strong {
       font-size: 1.25rem; }
   #body-nos main h2 {
@@ -241,7 +234,8 @@ header {
     font-size: 1.5rem;
     font-family: "Londrina Solid", cursive;
     margin-top: 15px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-size: 1.7rem; }
   #body-nos main hr {
     width: 50%;
     height: 4px;
@@ -249,6 +243,7 @@ header {
     margin-right: auto;
     border-top: 5px solid; }
   #body-nos main div {
+    margin: 50px auto 50px auto;
     position: relative; }
     #body-nos main div img#perro {
       width: 500px;
@@ -259,7 +254,7 @@ header {
       width: 300px;
       height: 300px;
       position: absolute;
-      left: 22%;
+      left: -25%;
       bottom: 25%; }
 
 #body-ct main {
@@ -485,6 +480,10 @@ header {
         .footer div a i:hover {
           color: #e7c56b; }
 
+@media screen and (max-width: 1440px) {
+  #body-pd main section#pd-img div.imagenes-dos {
+    display: none; } }
+
 @media screen and (max-width: 769px) {
   #body-indx main #section-1 div.contenedor img {
     width: 100%;
@@ -531,7 +530,7 @@ header {
     width: 200px;
     height: 200px;
     position: absolute;
-    left: 10%;
+    left: -25%;
     bottom: 25%; }
   #body-ct main input {
     width: 90%; }
@@ -554,12 +553,14 @@ header {
         margin: auto;
         white-space: wrap;
         overflow: hidden; }
-    #body-pd main section#pd-img div {
+    #body-pd main section#pd-img div.imagenes-uno {
       display: flex;
       justify-content: center; }
-      #body-pd main section#pd-img div .imgpdx {
+      #body-pd main section#pd-img div.imagenes-uno .imgpdx {
         width: 70px;
         height: 100px; }
+    #body-pd main section#pd-img div.imagenes-dos {
+      display: none; }
   #body-mn main section#sec1 div a.bot {
     width: 150px;
     line-height: 40px;
@@ -577,7 +578,7 @@ header {
 
 @media screen and (max-width: 425px) {
   #body-indx header nav.navbar div#navbar-toggler {
-    background-color: rgba(28, 41, 46, 0.33);
+    background-color: #264753;
     margin-left: -40px; }
     #body-indx header nav.navbar div#navbar-toggler .img-fluid {
       margin: 35px 0px 10px 40px;
@@ -606,15 +607,20 @@ header {
   #body-indx main #section-2 div#hrs h2 {
     font-size: 2rem; }
   #body-pd header nav.navbar div#navbar-toggler {
-    background-color: rgba(28, 41, 46, 0.33);
+    background-color: #264753;
     margin-left: -40px; }
     #body-pd header nav.navbar div#navbar-toggler .img-fluid {
       margin: 35px 0px 10px 40px;
       width: 70px; }
     #body-pd header nav.navbar div#navbar-toggler a.nav-link {
       margin-left: 20px; }
+  #body-pd main section#pd-img div.imagenes-dos {
+    display: initial; }
+    #body-pd main section#pd-img div.imagenes-dos .imgpdx {
+      width: 70px;
+      height: 100px; }
   #body-ub header nav.navbar div#navbar-toggler {
-    background-color: rgba(28, 41, 46, 0.33);
+    background-color: #264753;
     margin-left: -40px; }
     #body-ub header nav.navbar div#navbar-toggler .img-fluid {
       margin: 35px 0px 10px 40px;
@@ -631,7 +637,7 @@ header {
   #body-ub main div#imagen-local img#vector {
     display: none; }
   #body-nos header nav.navbar div#navbar-toggler {
-    background-color: rgba(28, 41, 46, 0.33);
+    background-color: #264753;
     margin-left: -40px; }
     #body-nos header nav.navbar div#navbar-toggler .img-fluid {
       margin: 35px 0px 10px 40px;
@@ -641,17 +647,17 @@ header {
   #body-nos main h1 {
     font-size: 2rem; }
   #body-nos main p {
-    width: 300px;
-    font-size: 1rem; }
+    font-size: 0.85rem;
+    width: 300px; }
   #body-nos main h2 {
     font-size: 1.5rem; }
   #body-nos main div img#perro {
     width: 300px;
-    height: 450px; }
+    height: 375px; }
   #body-nos main div img#paw {
     display: none; }
   #body-ct header nav.navbar div#navbar-toggler {
-    background-color: rgba(28, 41, 46, 0.33);
+    background-color: #264753;
     margin-left: -40px; }
     #body-ct header nav.navbar div#navbar-toggler .img-fluid {
       margin: 35px 0px 10px 40px;
@@ -663,7 +669,7 @@ header {
   #body-ct main textarea {
     width: 90%; }
   #body-mn header nav.navbar div#navbar-toggler {
-    background-color: rgba(28, 41, 46, 0.33);
+    background-color: #264753;
     margin-left: -40px; }
     #body-mn header nav.navbar div#navbar-toggler .img-fluid {
       margin: 35px 0px 10px 40px;
